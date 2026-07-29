@@ -28,11 +28,11 @@ extension Clients {
   protocol TelcoAutomationStub {
     func listOrchestrationClusters(
       request: ListOrchestrationClustersRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListOrchestrationClustersResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListOrchestrationClustersResponse
 
     func getOrchestrationCluster(
       request: GetOrchestrationClusterRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.OrchestrationCluster
+    ) async throws -> GoogleCloudTelcoAutomationV1.OrchestrationCluster
 
     func createOrchestrationCluster(
       request: CreateOrchestrationClusterRequest, options: GoogleCloudGax.RequestOptions
@@ -44,11 +44,11 @@ extension Clients {
 
     func listEdgeSlms(
       request: ListEdgeSlmsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListEdgeSlmsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListEdgeSlmsResponse
 
     func getEdgeSlm(
       request: GetEdgeSlmRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.EdgeSlm
+    ) async throws -> GoogleCloudTelcoAutomationV1.EdgeSlm
 
     func createEdgeSlm(
       request: CreateEdgeSlmRequest, options: GoogleCloudGax.RequestOptions
@@ -60,15 +60,15 @@ extension Clients {
 
     func createBlueprint(
       request: CreateBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint
 
     func updateBlueprint(
       request: UpdateBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint
 
     func getBlueprint(
       request: GetBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint
 
     func deleteBlueprint(
       request: DeleteBlueprintRequest, options: GoogleCloudGax.RequestOptions
@@ -76,55 +76,55 @@ extension Clients {
 
     func listBlueprints(
       request: ListBlueprintsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListBlueprintsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListBlueprintsResponse
 
     func approveBlueprint(
       request: ApproveBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint
 
     func proposeBlueprint(
       request: ProposeBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint
 
     func rejectBlueprint(
       request: RejectBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint
 
     func listBlueprintRevisions(
       request: ListBlueprintRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListBlueprintRevisionsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListBlueprintRevisionsResponse
 
     func searchBlueprintRevisions(
       request: SearchBlueprintRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.SearchBlueprintRevisionsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.SearchBlueprintRevisionsResponse
 
     func searchDeploymentRevisions(
       request: SearchDeploymentRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.SearchDeploymentRevisionsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.SearchDeploymentRevisionsResponse
 
     func discardBlueprintChanges(
       request: DiscardBlueprintChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.DiscardBlueprintChangesResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.DiscardBlueprintChangesResponse
 
     func listPublicBlueprints(
       request: ListPublicBlueprintsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListPublicBlueprintsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListPublicBlueprintsResponse
 
     func getPublicBlueprint(
       request: GetPublicBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.PublicBlueprint
+    ) async throws -> GoogleCloudTelcoAutomationV1.PublicBlueprint
 
     func createDeployment(
       request: CreateDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment
 
     func updateDeployment(
       request: UpdateDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment
 
     func getDeployment(
       request: GetDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment
 
     func removeDeployment(
       request: RemoveDeploymentRequest, options: GoogleCloudGax.RequestOptions
@@ -132,43 +132,43 @@ extension Clients {
 
     func listDeployments(
       request: ListDeploymentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListDeploymentsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListDeploymentsResponse
 
     func listDeploymentRevisions(
       request: ListDeploymentRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListDeploymentRevisionsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListDeploymentRevisionsResponse
 
     func discardDeploymentChanges(
       request: DiscardDeploymentChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.DiscardDeploymentChangesResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.DiscardDeploymentChangesResponse
 
     func applyDeployment(
       request: ApplyDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment
 
     func computeDeploymentStatus(
       request: ComputeDeploymentStatusRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ComputeDeploymentStatusResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ComputeDeploymentStatusResponse
 
     func rollbackDeployment(
       request: RollbackDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment
 
     func getHydratedDeployment(
       request: GetHydratedDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.HydratedDeployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.HydratedDeployment
 
     func listHydratedDeployments(
       request: ListHydratedDeploymentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListHydratedDeploymentsResponse
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListHydratedDeploymentsResponse
 
     func updateHydratedDeployment(
       request: UpdateHydratedDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.HydratedDeployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.HydratedDeployment
 
     func applyHydratedDeployment(
       request: ApplyHydratedDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.HydratedDeployment
+    ) async throws -> GoogleCloudTelcoAutomationV1.HydratedDeployment
 
     func listLocations(
       request: GoogleCloudLocation.ListLocationsRequest, options: GoogleCloudGax.RequestOptions
@@ -205,7 +205,7 @@ extension Clients {
 
     public func listOrchestrationClusters(
       request: ListOrchestrationClustersRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListOrchestrationClustersResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListOrchestrationClustersResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -225,12 +225,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListOrchestrationClustersResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListOrchestrationClustersResponse.self, from: data)
     }
 
     public func getOrchestrationCluster(
       request: GetOrchestrationClusterRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.OrchestrationCluster {
+    ) async throws -> GoogleCloudTelcoAutomationV1.OrchestrationCluster {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -245,7 +245,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.OrchestrationCluster.self, from: data)
+        GoogleCloudTelcoAutomationV1.OrchestrationCluster.self, from: data)
     }
 
     public func createOrchestrationCluster(
@@ -301,7 +301,7 @@ extension Clients {
 
     public func listEdgeSlms(
       request: ListEdgeSlmsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListEdgeSlmsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListEdgeSlmsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -321,12 +321,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListEdgeSlmsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListEdgeSlmsResponse.self, from: data)
     }
 
     public func getEdgeSlm(
       request: GetEdgeSlmRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.EdgeSlm {
+    ) async throws -> GoogleCloudTelcoAutomationV1.EdgeSlm {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -341,7 +341,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.EdgeSlm.self, from: data)
+        GoogleCloudTelcoAutomationV1.EdgeSlm.self, from: data)
     }
 
     public func createEdgeSlm(
@@ -395,7 +395,7 @@ extension Clients {
 
     public func createBlueprint(
       request: CreateBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -416,12 +416,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Blueprint.self, from: data)
+        GoogleCloudTelcoAutomationV1.Blueprint.self, from: data)
     }
 
     public func updateBlueprint(
       request: UpdateBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.blueprint.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding(
@@ -443,12 +443,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Blueprint.self, from: data)
+        GoogleCloudTelcoAutomationV1.Blueprint.self, from: data)
     }
 
     public func getBlueprint(
       request: GetBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -465,7 +465,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Blueprint.self, from: data)
+        GoogleCloudTelcoAutomationV1.Blueprint.self, from: data)
     }
 
     public func deleteBlueprint(
@@ -488,7 +488,7 @@ extension Clients {
 
     public func listBlueprints(
       request: ListBlueprintsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListBlueprintsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListBlueprintsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -507,12 +507,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListBlueprintsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListBlueprintsResponse.self, from: data)
     }
 
     public func approveBlueprint(
       request: ApproveBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -529,12 +529,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Blueprint.self, from: data)
+        GoogleCloudTelcoAutomationV1.Blueprint.self, from: data)
     }
 
     public func proposeBlueprint(
       request: ProposeBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -551,12 +551,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Blueprint.self, from: data)
+        GoogleCloudTelcoAutomationV1.Blueprint.self, from: data)
     }
 
     public func rejectBlueprint(
       request: RejectBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Blueprint {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Blueprint {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -573,12 +573,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Blueprint.self, from: data)
+        GoogleCloudTelcoAutomationV1.Blueprint.self, from: data)
     }
 
     public func listBlueprintRevisions(
       request: ListBlueprintRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListBlueprintRevisionsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListBlueprintRevisionsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -596,12 +596,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListBlueprintRevisionsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListBlueprintRevisionsResponse.self, from: data)
     }
 
     public func searchBlueprintRevisions(
       request: SearchBlueprintRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.SearchBlueprintRevisionsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.SearchBlueprintRevisionsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -620,12 +620,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.SearchBlueprintRevisionsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.SearchBlueprintRevisionsResponse.self, from: data)
     }
 
     public func searchDeploymentRevisions(
       request: SearchDeploymentRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.SearchDeploymentRevisionsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.SearchDeploymentRevisionsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -644,12 +644,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.SearchDeploymentRevisionsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.SearchDeploymentRevisionsResponse.self, from: data)
     }
 
     public func discardBlueprintChanges(
       request: DiscardBlueprintChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.DiscardBlueprintChangesResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.DiscardBlueprintChangesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -666,12 +666,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.DiscardBlueprintChangesResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.DiscardBlueprintChangesResponse.self, from: data)
     }
 
     public func listPublicBlueprints(
       request: ListPublicBlueprintsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListPublicBlueprintsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListPublicBlueprintsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -689,12 +689,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListPublicBlueprintsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListPublicBlueprintsResponse.self, from: data)
     }
 
     public func getPublicBlueprint(
       request: GetPublicBlueprintRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.PublicBlueprint {
+    ) async throws -> GoogleCloudTelcoAutomationV1.PublicBlueprint {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -709,12 +709,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.PublicBlueprint.self, from: data)
+        GoogleCloudTelcoAutomationV1.PublicBlueprint.self, from: data)
     }
 
     public func createDeployment(
       request: CreateDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -735,12 +735,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Deployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.Deployment.self, from: data)
     }
 
     public func updateDeployment(
       request: UpdateDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.deployment.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding(
@@ -762,12 +762,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Deployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.Deployment.self, from: data)
     }
 
     public func getDeployment(
       request: GetDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -784,7 +784,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Deployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.Deployment.self, from: data)
     }
 
     public func removeDeployment(
@@ -809,7 +809,7 @@ extension Clients {
 
     public func listDeployments(
       request: ListDeploymentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListDeploymentsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListDeploymentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -828,12 +828,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListDeploymentsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListDeploymentsResponse.self, from: data)
     }
 
     public func listDeploymentRevisions(
       request: ListDeploymentRevisionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListDeploymentRevisionsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListDeploymentRevisionsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -851,12 +851,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListDeploymentRevisionsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListDeploymentRevisionsResponse.self, from: data)
     }
 
     public func discardDeploymentChanges(
       request: DiscardDeploymentChangesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.DiscardDeploymentChangesResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.DiscardDeploymentChangesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -873,12 +873,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.DiscardDeploymentChangesResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.DiscardDeploymentChangesResponse.self, from: data)
     }
 
     public func applyDeployment(
       request: ApplyDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -895,12 +895,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Deployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.Deployment.self, from: data)
     }
 
     public func computeDeploymentStatus(
       request: ComputeDeploymentStatusRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ComputeDeploymentStatusResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ComputeDeploymentStatusResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -915,12 +915,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ComputeDeploymentStatusResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ComputeDeploymentStatusResponse.self, from: data)
     }
 
     public func rollbackDeployment(
       request: RollbackDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.Deployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.Deployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -937,12 +937,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.Deployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.Deployment.self, from: data)
     }
 
     public func getHydratedDeployment(
       request: GetHydratedDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.HydratedDeployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.HydratedDeployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -957,12 +957,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.HydratedDeployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.HydratedDeployment.self, from: data)
     }
 
     public func listHydratedDeployments(
       request: ListHydratedDeploymentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.ListHydratedDeploymentsResponse {
+    ) async throws -> GoogleCloudTelcoAutomationV1.ListHydratedDeploymentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -980,12 +980,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.ListHydratedDeploymentsResponse.self, from: data)
+        GoogleCloudTelcoAutomationV1.ListHydratedDeploymentsResponse.self, from: data)
     }
 
     public func updateHydratedDeployment(
       request: UpdateHydratedDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.HydratedDeployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.HydratedDeployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.hydratedDeployment.map({ $0.name }),
           !pathVariable0.isEmpty
@@ -1009,12 +1009,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.HydratedDeployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.HydratedDeployment.self, from: data)
     }
 
     public func applyHydratedDeployment(
       request: ApplyHydratedDeploymentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTelcoautomationV1.HydratedDeployment {
+    ) async throws -> GoogleCloudTelcoAutomationV1.HydratedDeployment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1031,7 +1031,7 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTelcoautomationV1.HydratedDeployment.self, from: data)
+        GoogleCloudTelcoAutomationV1.HydratedDeployment.self, from: data)
     }
 
     public func listLocations(
